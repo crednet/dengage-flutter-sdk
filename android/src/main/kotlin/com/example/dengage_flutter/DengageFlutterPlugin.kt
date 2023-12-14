@@ -696,7 +696,7 @@ class DengageFlutterPlugin: FlutterPlugin, MethodCallHandler, DengageResponder()
 
   private fun stopGeofence (@NonNull call: MethodCall, @NonNull result: Result) {
     try {
-      DengageCoordinator.sharedInstance.dengageManager!!.stopGeofence()
+//      DengageCoordinator.sharedInstance.dengageManager!!.stopGeofence()
       replySuccess(result, true)
     } catch (ex: Exception){
       replyError(result, "error", ex.localizedMessage, ex)
@@ -705,7 +705,7 @@ class DengageFlutterPlugin: FlutterPlugin, MethodCallHandler, DengageResponder()
 
   private fun startGeofence (@NonNull call: MethodCall, @NonNull result: Result) {
     try {
-      DengageCoordinator.sharedInstance.dengageManager!!.startGeofence()
+//      DengageCoordinator.sharedInstance.dengageManager!!.startGeofence()
       replySuccess(result, true)
     } catch (ex: Exception){
       replyError(result, "error", ex.localizedMessage, ex)
