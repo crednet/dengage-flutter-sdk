@@ -675,7 +675,7 @@ class DengageFlutterPlugin: FlutterPlugin, MethodCallHandler, DengageResponder()
 
   private fun requestLocationPermissions (@NonNull call: MethodCall, @NonNull result: Result) {
     try {
-      DengageCoordinator.sharedInstance.dengageManager!!.requestLocationPermissions(appActivity)
+      // DengageCoordinator.sharedInstance.dengageManager!!.requestLocationPermissions(appActivity)
       replySuccess(result, true)
     } catch (ex: Exception){
       replyError(result, "error", ex.localizedMessage, ex)
